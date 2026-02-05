@@ -47,6 +47,11 @@ jobs:
         run: pnpm install # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: pnpm --filter ./docs run build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Debug build output
+        run: |
+          ls -la docs/.vitepress/
+          ls -la docs/.vitepress/dist || echo "Directory does not exist"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
