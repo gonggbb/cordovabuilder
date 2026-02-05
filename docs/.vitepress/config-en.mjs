@@ -18,6 +18,12 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Production',
+          items: [
+            { text: 'Cordova 12 build', link: '/production/version-v12' },
+          ]
+        },
+        {
           text: 'Android Development',
           items: [
             { text: 'certificate', link: '/android/certificate' },
@@ -26,12 +32,7 @@ export default defineConfig({
 
           ]
         },
-        {
-          text: 'Production',
-          items: [
-            { text: 'Cordova 12 build', link: '/production/v12' },
-          ]
-        },
+
         {
           text: 'Images & Version',
           items: [

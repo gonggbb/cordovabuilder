@@ -14,15 +14,8 @@ export default defineConfig({
   title: "cordovabuilder",
   description: "cordovabuilder",
   head: [
-    // [
-    //   'link',
-    //   { rel: 'icon', type: 'image/svg+xml', href: '/vitepress-logo-mini.svg' }
-    // ],
-
-    [
-      'link',
-      { rel: 'icon', type: 'image/png', href: '/image.png' }
-    ],
+    ['link', { rel: 'icon', href: '/cordovabuilder/favicon.ico' }],
+    // ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }], 
     // og:type: 内容类型（如网站、文章）。
     // og:site_name: 站点名称。
     // og:image: 分享时显示的缩略图。
@@ -54,8 +47,9 @@ export default defineConfig({
     logo: {
       light: '/image.png',      // 浅色模式显示
       dark: '/image.png',  // 深色模式显示
-      alt: '',
+      alt: 'cordovabuilder'            // 无障碍描述,
     },
+
     // 隐藏右侧站点标题（当 Logo 已包含文字时）
     // siteTitle: false,
     socialLinks: [
