@@ -19,6 +19,12 @@ export default defineConfig({
           ]
         },
         {
+          text: '生产环境',
+          items: [
+            { text: 'Cordova 12 构建', link: '/production/v12' },
+          ]
+        },
+        {
           text: 'Android Development',
           items: [
             { text: '证书', link: '/android/certificate' },

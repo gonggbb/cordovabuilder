@@ -26,12 +26,12 @@ export default defineConfig({
 
           ]
         },
-        // {
-        //   text: 'Build Shells',
-        //   items: [
-        //     { text: 'certificate', link: '/android/certificate' },
-        //   ]
-        // },
+        {
+          text: 'Production',
+          items: [
+            { text: 'Cordova 12 build', link: '/production/v12' },
+          ]
+        },
         {
           text: 'Images & Version',
           items: [
