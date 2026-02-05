@@ -1,0 +1,7 @@
+packages:
+  # 包含所有子包
+  - 'packages/*'
+  - 'apps/*'
+  - 'docs/*'
+  # 排除特定目录
+  - '!**/test/**'
