@@ -1,8 +1,15 @@
 import { defineConfig } from 'vitepress'
-
+// import VersionTable from './components/VersionTable.vue'
+// import vue from '@vitejs/plugin-vue'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    // 将仓库名作为 base，注意前后斜杠
+  //  vite: {
+  //   plugins: [vue()] // 正确配置插件
+  // },
+  // enhanceApp({ app }) {
+  //   app.component('VersionTable', VersionTable)
+  // },
+  // 将仓库名作为 base，注意前后斜杠
   base: '/cordovabuilder/',
   title: "cordovabuilder",
   description: "cordovabuilder",
@@ -30,7 +37,7 @@ export default defineConfig({
         // content: 'https://vitepress.dev/vitepress-og.jpg'
       }
     ],
-    ['meta', { property: 'og:url', content: 'https://vitepress.dev/' }],
+    ['meta', { property: 'og:url', content: 'https://github.com/gonggbb/cordovabuilder' }],
     // 加载第三方统计脚本（如 Fathom Analytics）。
     // defer: 脚本延迟加载，不影响页面渲染。
     [
@@ -52,7 +59,7 @@ export default defineConfig({
     // 隐藏右侧站点标题（当 Logo 已包含文字时）
     // siteTitle: false,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/gonggbb/docker-cordovabuilder' }
+      { icon: 'github', link: 'https://github.com/gonggbb/cordovabuilder' }
     ],
     search: {
       provider: 'local',
@@ -66,8 +73,46 @@ export default defineConfig({
 
       }
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+
+    editLink: {
+      pattern: 'https://github.com/gonggbb/cordovabuilder/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页面'
+    },
+
+    footer: {
+      message: '基于 MIT 许可发布',
+      copyright: '版权所有 © 2025-至今 cordovabuilder'
+    },
+
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+
+    outline: {
+      label: '页面导航'
+    },
+
+    lastUpdated: {
+      text: '最后更新于'
+    },
+
+    notFound: {
+      title: '页面未找到',
+      quote:
+        '但如果你不改变方向，并且继续寻找，你可能最终会到达你所前往的地方。',
+      linkLabel: '前往首页',
+      linkText: '带我回首页'
+    },
+
+    langMenuLabel: '多语言',
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    skipToContentLabel: '跳转到内容'
+
+
   }
 })

@@ -10,12 +10,15 @@ hero:
     src: /image.png
     alt: cordovabuilder
   actions:
-    - theme: brand
-      text: Get Started
-      link: /guide/getting-started
-    # - theme: alt
-    #   text: View Examples
-    #   link: /markdown-examples
+  - theme: brand
+    text:  What is cordovabuilder?
+    link: /what-is-cordovabuilder
+  - theme: alt
+    text: Quickstart
+    link: /guide/getting-started
+  - theme: alt
+    text: GitHub
+    link: https://github.com/gonggbb/cordovabuilder
 
 features:
   - title: 🛠️ Cordova 10

@@ -1,4 +1,4 @@
-## 📦 证书升级与转换
+## 证书升级与转换
 
 ```bash
 # 安装 OpenSSL（Ubuntu/Debian）

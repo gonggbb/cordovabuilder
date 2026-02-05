@@ -1,4 +1,4 @@
-## 🚀 快速开始
+## 快速开始
 
 ## 拉取镜像
 ```bash
@@ -46,10 +46,10 @@ docker run -it \
   bash 
 ```
 
-## bash 自动设置软链接和日志输出
+- Docker 启动指令设置构建脚本软链接和日志输出
 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
 
-## 使用外部链接脚本
+-  Docker 启动脚本设置构建脚本软链接和日志输出
 
 -v /home/workspace/项目目录/build-script-ln.sh:/build-script-ln.sh \
 bash /build-script-ln.sh

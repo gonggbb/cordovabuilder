@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /guide/getting-started
+      link: /what-is-cordovabuilder
     # - theme: alt
     #   text: 查看示例
     #   link: /markdown-examples
