@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    // 将仓库名作为 base，注意前后斜杠
+  base: '/cordovabuilder/',
   title: "cordovabuilder",
   description: "cordovabuilder",
   head: [
