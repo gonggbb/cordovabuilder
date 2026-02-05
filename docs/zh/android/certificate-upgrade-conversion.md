@@ -1,27 +1,27 @@
-## Certificate upgrade and conversion
+## 证书升级与转换
 
 ```bash
-# Install OpenSSL (Ubuntu/Debian)
+# 安装 OpenSSL（Ubuntu/Debian）
 apt update && apt install openssl
 
-# Extract private key
+# 提取私钥
 openssl pkcs12 -in newmyapp.p12 -nodes -nocerts -out myappkey.pem
 
-# Extract original certificate
+# 提取原证书
 openssl pkcs12 -in newmyapp.p12 -nokeys -out old-cert.pem
 
-# Generate a new self-signed certificate
+# 生成新的自签名证书
 openssl req -new -x509 \
   -key myappkey.pem \
   -out new-cert.pem \
   -days 9125 \
-  -subj "CN=Organization name or domain name, OU=Department or branch name, O=Organization, L=City, ST=State or province, C=Your country"
+  -subj "/CN=组织名称或域名/OU=部门或分支机构名称/O=组织/L=地区城市/ST=周或省/C=你的国家"
 
-# Export to PKCS12 format
+# 导出为 PKCS12 格式
 openssl pkcs12 -export \
   -in new-cert.pem \
   -inkey myappkey.pem \
   -out newmyapp-renewed.p12 \
   -name myappkey \
-  -passout pass: Your password
+  -passout pass:你的密码
 ```

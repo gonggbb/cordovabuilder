@@ -6,13 +6,19 @@ hero:
   name: 'cordovabuilder'
   text: 'cordova 混合开发环境'
   tagline: 使用 docker 构建不同环境版本的 cordova app
+  image:
+    src: /image.png
+    alt: cordovabuilder
   actions:
-    - theme: brand
-      text: 开始使用
-      link: /what-is-cordovabuilder
-    # - theme: alt
-    #   text: 查看示例
-    #   link: /markdown-examples
+  - theme: brand
+    text:  什么是 cordovabuilder?
+    link: /zh/what-is-cordovabuilder
+  - theme: alt
+    text: 快速开始
+    link: /zh/guide/getting-started
+  - theme: alt
+    text: GitHub
+    link: https://github.com/gonggbb/cordovabuilder
 
 features:
   - title: 🛠️ Cordova 10

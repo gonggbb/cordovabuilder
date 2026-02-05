@@ -1,60 +1,60 @@
-## 快速开始
+## Quick Start
 
-## 拉取镜像
+## Pulling images
 ```bash
-# 生产推荐
+# Production recommendation
 docker pull gamesg/cordovabuilder:v2.0.0-rc.5
 docker pull ghcr.io/gonggbb/docker-cordovabuilder:v2.0.0-rc.4
 
-# 兼容旧版
+# Compatibility with older versions
 docker pull gamesg/cordovabuilder:v1.0.0-rc.6
 docker pull ghcr.io/gonggbb/docker-cordovabuilder:v1.0.0-rc.5
 ```
 
 
-## Docker 在 PowerShell (Windows) 启动命令
+## Docker start command in PowerShell (Windows)
 ```powershell
-# 自动设置软链接
+# Automatically set soft links
 docker run -it `
-  -v C:\workspace\项目目录:/workspace `
-  -v C:\workspace\项目目录\gradle-caches:/root/.gradle `
+  "-v C:\workspace\project directory:/workspace"
+  -v C:\workspace\project_directory\gradle-caches:/root/.gradle `
   --name cordova-builder-$(Get-Date -Format yyyyMMddHHmmss) `
   --privileged `
   -u 0 `
-  -e KEYSTORE_PATH=/workspace/你的签名文件 `
+  "-e KEYSTORE_PATH=/workspace/your_signature_file"
   -e KEY_ALIAS=xx `
-  -e KEYSTORE_PASSWORD=你的密码 `
-  -e KEY_PASSWORD=你的密码 `
+  -e KEYSTORE_PASSWORD=Your password
+  -e KEY_PASSWORD=your password
   gamesg/cordovabuilder:v2.0.0-rc.5 `
   bash 
 ```
 
-## Docker 在 Bash (Linux/macOS)启动命令
+## Docker start command in Bash (Linux/macOS)
 ```bash
-# 自动设置软链接
+# Automatically set soft links
 docker run -it \
-  -v /home/workspace/项目目录:/workspace \
-  -v /home/workspace/项目目录/gradle-caches:/root/.gradle \
+  -v /home/workspace/project_directory:/workspace \
+  -v /home/workspace/project_directory/gradle-caches:/root/.gradle \
   --name cordova-builder-$(date +%s) \
   --privileged \
   -u 0 \
-  -e KEYSTORE_PATH=/workspace/你的签名文件 \
+  -e KEYSTORE_PATH=/workspace/your signature file \
   -e KEY_ALIAS=xx \
-  -e KEYSTORE_PASSWORD=你的密码 \
-  -e KEY_PASSWORD=你的密码 \
+  -e KEYSTORE_PASSWORD=Your password \
+  -e KEY_PASSWORD=Your password \
   gamesg/cordovabuilder:v2.0.0-rc.5 \
   bash 
 ```
 
-- Docker 启动指令设置构建脚本软链接和日志输出
+## Docker start command to set up build script soft links and log output
 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
 
--  Docker 启动脚本设置构建脚本软链接和日志输出
+## Docker startup script sets up soft links for build scripts and logs output
 
--v /home/workspace/项目目录/build-script-ln.sh:/build-script-ln.sh \
+-v /home/workspace/project_directory/build-script-ln.sh:/build-script-ln.sh \
 bash /build-script-ln.sh
 
-创建 `build-script-ln.sh`：
+Create `build-script-ln.sh`:
 ```bash
 #!/bin/bash
 ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short
@@ -62,19 +62,19 @@ ln -sf /dev/stdout nohup.log
 exec /bin/bash
 ```
 
-## 容器内置的可用构建脚本
+## Available build scripts built into the container
 
-| 脚本 | v3.0.0 | v2.0.0 | v1.0.0 | 功能 |
+| Script | v3.0.0 | v2.0.0 | v1.0.0 | Functionality |
 |------|--------|--------|--------|------|
-| `apk-automatic-v2.sh` | ✅ | ✅ | ✅ | 自动化构建 (apksigner) |
-| `apk-build-sign-v2.sh` | ✅ | ✅ | ✅ | 打包+签名 (apksigner) |
-| `apk-init.sh` | ✅ | ✅ | ✅ | 环境初始化 |
-| `apk-automatic.sh` | ❌ | ❌ | ✅ | 自动化构建 (jarsigner) |
-| `apk-replace-repositories.sh` | ✅ | ✅ | ✅ | 替换 jcenter 依赖 |
+| `apk-automatic-v2.sh` | ✅ | ✅ | ✅ | Automated build (apksigner) |
+| `apk-build-sign-v2.sh` | ✅ | ✅ | ✅ | Package + Sign (apksigner) |
+| `apk-init.sh` | ✅ | ✅ | ✅ | Environment initialization |
+| `apk-automatic.sh` | ❌ | ❌ | ✅ | Automated build (jarsigner) |
+| `apk-replace-repositories.sh` | ✅ | ✅ | ✅ | Replace jcenter dependencies |
 ---
 
 
-## 项目初始化
+## Project initialization
 
 ```bash
 cordova create myApp org.apache.cordova.myApp myApp
@@ -84,13 +84,13 @@ cordova requirements android
 ```
 
 
-## 构建命令
+## Build Command
 ```bash
-# 调试构建
+# Debugging and building
 cordova build android --verbose
 
-# 发布构建 + 签名（推荐）
+# Release build + Signing (recommended)
 cordova build android --release -- --packageType=apk \
   --keystore=/workspace/myapp.p12 --keystoreType=PKCS12 \
-  --storePassword=密码 --alias=myappkey --password=密码
+  --storePassword=password --alias=myappkey --password=password
 ```

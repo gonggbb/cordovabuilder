@@ -3,10 +3,10 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   themeConfig: {
-    nav: [
-      // { text: 'Home', link: '/' },
-      // { text: 'Images & Version', link: '/blog/v13' }
-    ],
+    // nav: [
+    // { text: 'Home', link: '/' },
+    // { text: 'Images & Version', link: '/blog/v13' }
+    // ],
     sidebar: {
       '/': [
         {
