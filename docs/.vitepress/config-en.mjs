@@ -20,6 +20,7 @@ export default defineConfig({
         {
           text: 'Production',
           items: [
+            { text: 'Compose build', link: '/production/compose' },
             { text: 'Cordova 12 build', link: '/production/version-v12' },
           ]
         },

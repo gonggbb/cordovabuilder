@@ -98,5 +98,10 @@ APK signing process completed
 
 ## Gradle Cache
 
--v C:\worksapce\project-20250903\gradle-caches:/root/.gradle 
+It can't be downloaded and copied
 
+> -v C:\worksapce\project-20250903\gradle-caches:/root/.gradle 
+
+Secondary construction, no need to download again
+
+<img src="/v12/build-v2.png" width="100%" />

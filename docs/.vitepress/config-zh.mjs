@@ -21,6 +21,7 @@ export default defineConfig({
         {
           text: '生产环境',
           items: [
+            { text: 'Compose build', link: '/zh/production/compose' },
             { text: 'Cordova 12 构建', link: '/zh/production/version-v12' },
           ]
         },

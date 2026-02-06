@@ -96,7 +96,11 @@ Built the following apk(s):
 � APK 签名流程完成
 ```
 
-## Gradle 缓存
+
+## Gradle Cache
 
 -v C:\worksapce\project-20250903\gradle-caches:/root/.gradle 
 
+二次构建，不用重新下载 
+
+<img src="/v12/build-v2.png" width="100%" />
