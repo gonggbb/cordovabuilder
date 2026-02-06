@@ -26,7 +26,7 @@ services:
     # entrypoint: ["/bin/bash", "-c", "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && exec /bin/bash"]
 ```
 
-## **使用方法（全平台通用）：**
+## 使用方法（全平台通用）：
 
 ```bash
 # 验证

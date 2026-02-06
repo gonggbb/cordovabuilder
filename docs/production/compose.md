@@ -26,7 +26,7 @@ services:
     # entrypoint: ["/bin/bash", "-c", "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && exec /bin/bash"]
 ```
 
-## Usage (Universal for All Platforms):**
+## Usage (Universal for All Platforms):
 
 ```bash
 
