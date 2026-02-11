@@ -2,9 +2,18 @@ cordova : https://cordova.apache.org/docs/en/latest/
 
 ## Docker Startup
 
+
+
+> [!TIP]
+> 推荐Compose 构建启动容器
+
+Start the container
+
+
+> λ docker run -it  -v .\:/root/.gradle  -v .\:/workspace  --name cordova-builder01 --privileged  -u 0 -e KEYSTORE_PATH=/workspace/xx.keystore -e KEY_ALIAS=xx -e KEYSTORE_PASSWORD=password  -e KEY_PASSWORD=password gamesg/cordovabuilder:v2.0.0-rc.5 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
+
 ```bash
-# Start the container
-λ docker run -it  -v C:\worksapce\project-20250903\gradle-caches:/root/.gradle  -v C:\worksapce\project-20250903:/workspace  --name cordova-builder01 --privileged  -u 0 -e KEYSTORE_PATH=/workspace/xx.keystore -e KEY_ALIAS=xx -e KEYSTORE_PASSWORD=password  -e KEY_PASSWORD=password gamesg/cordovabuilder:v2.0.0-rc.5 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
+
 # build-scripts-short
 root@05bb6cd2f485:/workspace# ll build-scripts-short/
 total 20

@@ -10,6 +10,7 @@ export default defineConfig({
   //   app.component('VersionTable', VersionTable)
   // },
   // 将仓库名作为 base，注意前后斜杠
+
   base: '/cordovabuilder/',
   title: "cordovabuilder",
   description: "cordovabuilder",
@@ -49,6 +50,13 @@ export default defineConfig({
       dark: '/image.png',  // 深色模式显示
       alt: 'cordovabuilder'            // 无障碍描述,
     },
+  
+    // 默认是 [2, 3]，修改为 [1, 3] 即可包含一级标题
+    outline: {
+      label: '页面导航',
+      level: [1, 3],
+
+    },
 
     // 隐藏右侧站点标题（当 Logo 已包含文字时）
     // siteTitle: false,
@@ -83,9 +91,7 @@ export default defineConfig({
       next: '下一页'
     },
 
-    outline: {
-      label: '页面导航'
-    },
+
 
     lastUpdated: {
       text: '最后更新于'

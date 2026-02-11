@@ -2,9 +2,14 @@ cordova : https://cordova.apache.org/docs/en/latest/
 
 ## Docker 启动
 
+> [!TIP]
+> 推荐Compose 构建启动容器
+
+启动容器
+
+> λ docker run -it -v .\:/root/.gradle -v .\:/workspace --name cordova-builder01 --privileged -u 0 -e KEYSTORE_PATH=/workspace/xx.keystore -e KEY_ALIAS=xx -e KEYSTORE_PASSWORD=password -e KEY_PASSWORD=password gamesg/cordovabuilder:v2.0.0-rc.5 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
+
 ```bash
-# 启动容器
-λ docker run -it  -v C:\worksapce\project-20250903\gradle-caches:/root/.gradle  -v C:\worksapce\project-20250903:/workspace  --name cordova-builder01 --privileged  -u 0 -e KEYSTORE_PATH=/workspace/xx.keystore -e KEY_ALIAS=xx -e KEYSTORE_PASSWORD=password  -e KEY_PASSWORD=password gamesg/cordovabuilder:v2.0.0-rc.5 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
 # build-scripts-short
 root@05bb6cd2f485:/workspace# ll build-scripts-short/
 total 20
@@ -16,7 +21,7 @@ drwxr-xr-x 3 root root 4096 Nov 28 10:27 ../
 
 # 自动签名脚本v2
 
-root@05bb6cd2f485:/workspace# sh  build-scripts-short/apk-automatic-v2.sh 
+root@05bb6cd2f485:/workspace# sh  build-scripts-short/apk-automatic-v2.sh
 
 ```
 
@@ -96,11 +101,10 @@ Built the following apk(s):
 � APK 签名流程完成
 ```
 
-
 ## Gradle Cache
 
--v C:\worksapce\project-20250903\gradle-caches:/root/.gradle 
+-v C:\worksapce\project-20250903\gradle-caches:/root/.gradle
 
-二次构建，不用重新下载 
+二次构建，不用重新下载
 
 <img src="/v12/build-v2.png" width="100%" />
