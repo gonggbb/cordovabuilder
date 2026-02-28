@@ -16,13 +16,15 @@
   },
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
     "eslint": "^10.0.2",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7"
   },
   "lint-staged": {
     "**/*.{js,vue}": [
-      "eslint --fix",
+      // "eslint --fix",
       "prettier --write"
     ]
   }

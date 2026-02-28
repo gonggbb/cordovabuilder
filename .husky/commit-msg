@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# . "$(dirname "$0")/h"
+# 添加 commit-msg hook
+# echo 'npx --no -- commitlint --edit ${1}' > .husky/commit-msg
+npx --no -- commitlint --edit ${1}
