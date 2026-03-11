@@ -3,10 +3,10 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   themeConfig: {
-    // nav: [
-    // { text: 'Home', link: '/' },
-    // { text: 'Images & Version', link: '/blog/v13' }
-    // ],
+    nav: [
+      // { text: 'Home', link: '/' },
+      { text: 'Blog', link: '/blog/update-logs' }
+    ],
     sidebar: {
       '/': [
         {
@@ -40,6 +40,13 @@ export default defineConfig({
           items: [
             { text: 'Official Plugins', link: '/plugins/official' },
             { text: 'Third-party Plugins', link: '/plugins/third-party' },
+          ]
+        },
+        {
+          text: 'Tools',
+          items: [
+            { text: 'ADB', link: '/tools/adb' },
+            { text: 'LocalSend', link: '/tools/localSend' },
           ]
         },
         {

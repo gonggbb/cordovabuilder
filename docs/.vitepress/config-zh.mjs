@@ -4,10 +4,10 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   themeConfig: {
 
-    // nav: [
-    //   { text: 'Home', link: '/zh' },
-    //   { text: 'Examples', link: '/zh/markdown-examples' }
-    // ],
+    nav: [
+      // { text: 'Home', link: '/zh' },
+      { text: '博客', link: '/zh/blog/update-logs' }
+    ],
     sidebar: {
       '/zh/': [
         {
@@ -40,6 +40,13 @@ export default defineConfig({
           items: [
             { text: '官方插件', link: '/zh/plugins/official' },
             { text: '第三方插件', link: '/zh/plugins/third-party' },
+          ]
+        },
+        {
+          text: 'Tools',
+          items: [
+            { text: 'ADB', link: '/zh/tools/adb' },
+            { text: 'LocalSend', link: '/zh/tools/localSend' },
           ]
         },
 
