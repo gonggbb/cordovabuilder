@@ -1,9 +1,7 @@
-
 ## Docker Startup
 
 > [!TIP]
-> 推荐Compose 构建启动容器
-
+> It is recommended to build the startup container with Compose
 
 <!-- > [!NOTE] 重要
 > 强调用户在快速浏览文档时也不应忽略的重要信息。
@@ -20,7 +18,9 @@
 > [!CAUTION]
 > 行为可能带来的负面影响。 -->
 
-> λ docker run -it  -v .\:/root/.gradle  -v .\:/workspace  --name cordova-builder01 --privileged  -u 0 -e KEYSTORE_PATH=/workspace/xx.keystore -e KEY_ALIAS=xx -e KEYSTORE_PASSWORD=password  -e KEY_PASSWORD=password gamesg/cordovabuilder:v1.0.0-rc.7 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
+```cmd
+λ docker run -it -v .\:/root/.gradle -v .\:/workspace --name cordova-builder01 --privileged -u 0 -e KEYSTORE_PATH=/workspace/xx.keystore -e KEY_ALIAS=xx -e KEYSTORE_PASSWORD=password -e KEY_PASSWORD=password gamesg/cordovabuilder:v1.0.0-rc.7 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
+```
 
 ```bash
 # Start the container

@@ -2,15 +2,15 @@ cordova : https://cordova.apache.org/docs/en/latest/
 
 ## Docker Startup
 
-
-
 > [!TIP]
-> 推荐Compose 构建启动容器
+> It is recommended to build the startup container with Compose
 
 Start the container
 
+```cmd
 
-> λ docker run -it  -v .\:/root/.gradle  -v .\:/workspace  --name cordova-builder01 --privileged  -u 0 -e KEYSTORE_PATH=/workspace/xx.keystore -e KEY_ALIAS=xx -e KEYSTORE_PASSWORD=password  -e KEY_PASSWORD=password gamesg/cordovabuilder:v2.0.0-rc.5 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
+> λ docker run -it -v .\:/root/.gradle -v .\:/workspace --name cordova-builder01 --privileged -u 0 -e KEYSTORE_PATH=/workspace/xx.keystore -e KEY_ALIAS=xx -e KEYSTORE_PASSWORD=password -e KEY_PASSWORD=password gamesg/cordovabuilder:v2.0.0-rc.5 bash -c "ln -sfn /opt/app-env/build-scripts /workspace/build-scripts-short && ln -sf /dev/stdout nohup.log && exec /bin/bash"
+```
 
 ```bash
 
@@ -25,7 +25,7 @@ drwxr-xr-x 3 root root 4096 Nov 28 10:27 ../
 
 # Automatic Signature Script v2
 
-root@05bb6cd2f485:/workspace# sh  build-scripts-short/apk-automatic-v2.sh 
+root@05bb6cd2f485:/workspace# sh  build-scripts-short/apk-automatic-v2.sh
 
 ```
 
@@ -109,7 +109,7 @@ APK signing process completed
 
 It can't be downloaded and copied
 
-> -v C:\worksapce\project-20250903\gradle-caches:/root/.gradle 
+> -v C:\worksapce\project-20250903\gradle-caches:/root/.gradle
 
 Secondary construction, no need to download again
 
