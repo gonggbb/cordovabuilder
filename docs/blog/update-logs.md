@@ -1,5 +1,13 @@
 # Update Logs
 
+##
+
+- chrome 调试
+- v12 打包问题 Execution failed for task ':app:mergeReleaseResources'.
+
+- chrome debugging
+- v12 packaging issues " Execution failed for task ': app: mergeReleaseResources'."
+
 ## a500498 (feat: Add adb, localsend and diagnostic plugin, 2026-03-11)
 
 - LocalSend Usage Guide documentation

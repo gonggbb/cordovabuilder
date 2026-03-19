@@ -30,9 +30,9 @@ export default defineConfig({
         {
           text: '镜像 & 版本',
           items: [
-            { text: 'Cordova 10', link: '/zh/blog/v10' },
-            { text: 'Cordova 12', link: '/zh/blog/v12' },
-            { text: 'Cordova 13', link: '/zh/blog/v13' },
+            { text: 'Images Cordova 10', link: '/zh/blog/v10' },
+            { text: 'Images Cordova 12', link: '/zh/blog/v12' },
+            { text: 'Images Cordova 13', link: '/zh/blog/v13' },
           ]
         },
         {
@@ -45,8 +45,9 @@ export default defineConfig({
         {
           text: 'Tools',
           items: [
-            { text: 'ADB', link: '/zh/tools/adb' },
-            { text: 'LocalSend', link: '/zh/tools/localSend' },
+            { text: 'ADB & Scrcpy录屏', link: '/zh/tools/adb' },
+            { text: 'Chrome 调试', link: '/zh/tools/chrome' },
+            { text: 'LocalSend Wifi 传输', link: '/zh/tools/localSend' },
           ]
         },
 
