@@ -1,9 +1,6 @@
 # Update Logs
 
-##
-
-- chrome 调试
-- v12 打包问题 Execution failed for task ':app:mergeReleaseResources'.
+## 63bf8a2 (docs: Chrome debug use, 2026-03-19)
 
 - chrome debugging
 - v12 packaging issues " Execution failed for task ': app: mergeReleaseResources'."

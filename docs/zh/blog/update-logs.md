@@ -1,3 +1,10 @@
+# 更新日志
+
+## 63bf8a2 (docs: Chrome debug use, 2026-03-19)
+
+- chrome 调试
+- v12 打包问题 Execution failed for task ':app:mergeReleaseResources'.
+
 ## a500498 (feat: Add adb, localsend and diagnostic plugin, 2026-03-11)
 
 - LocalSend 的使用指南
