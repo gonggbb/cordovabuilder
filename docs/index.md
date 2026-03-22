@@ -21,34 +21,47 @@ hero:
       link: https://github.com/gonggbb/cordovabuilder
 
 features:
-  - title: 🛠️ Cordova 10
+  - title: 🦞 Cordova 10 CA:9
     details: |
-      Compatible with legacy projects<br>
       - cordova-android: ^9.1.0<br>
       - SDK: 30<br>
       - Gradle: 6.5-all<br>
       - Java: 1.8<br>
       - Node.js: 10.15.3
 
-  - title: ⚡ Cordova 12
+  - title: 🦞 Cordova 10 CA:10
     details: |
-      Suitable for new projects<br>
+      - cordova-android: ^10.1.2<br>
+      - SDK: 30<br>
+      - Gradle: 7.1.1<br>
+      - Java: 11 <br>
+      - Node.js: ≥ 12 <br>
+
+  - title: 🦞 Cordova 11
+    details: |
+      - cordova-android: 11.0.x<br>
+      - Build Tools: ^32.0.0<br>
+      - Gradle: 7.4.2<br>
+      - Java: 11<br>
+      - Node.js: ≥ 14 <br>
+
+  - title: 🦞 Cordova 12
+    details: |
       - cordova-android: 12.0.x<br>
       - Build Tools: ^33.0.2<br>
       - Gradle: 7.6<br>
       - Java: 11 → 17.0.10<br>
       - Node.js: ≥ 16.13 → 18.20.8<br>
 
-  - title: 🔥 Cordova 13
+  - title: 🦞 Cordova 13 CA:13
     details: |
-      Latest release <br>
       - cordova-android: 13.0.x<br>
       - Build Tools: ^34.0.0<br>
       - Gradle: 8.7<br>
       - Java: 17.0.10<br>
-      - Node.js:  20.19.5<br>
+      - Node.js: 20.19.5<br>
 
-  - title: 🔥 Cordova 14
+  - title: 🦞 Cordova 13 CA:14
     details: |
       Latest release <br>
       - cordova-android: 14.0.x<br>
@@ -57,7 +70,7 @@ features:
       - Java: 17.0.10<br>
       - Node.js: 20.19.5<br>
 
-  - title: 🔥 Cordova 15
+  - title: 🦞 Cordova 13 CA:15
     details: |
       Latest release <br>
       - cordova-android: 15.0.x<br>

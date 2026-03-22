@@ -4,11 +4,6 @@
 
 **Cordovabuilder** is an automated build platform designed specifically for developers, aiming to simplify the packaging process of Cordova hybrid applications. By integrating Docker container technology, it achieves a cross-platform and consistent build environment, supporting the full deployment process from development to production.
 
-> ✅ Supports Cordova versions 10, 12, and 13  
-> ✅ Compatible with Android platform  
-> ✅ Provides multi-language support (Chinese/English)  
-> ✅ Integrates functions such as signature, certificate management, and Gradle cache optimization
-
 ## Core functions
 
 | Function                                           | Description                                                                                                                     |
@@ -18,24 +13,6 @@
 | **Multi-version Compatibility**                    | Supports Cordova 10 (compatible with legacy projects), Cordova 12 (recommended for production), and Cordova 13 (latest release) |
 | **CI/CD Integration**                              | Easily integrates with CI tools such as GitHub Actions and Jenkins to achieve automated deployment                              |
 | **Multi-language support**                         | Provides bilingual Chinese and English interfaces to meet internationalization needs                                            |
-
-## Applicable Scenarios
-
-- **New project development**: It is recommended to use `v3.0.0-rc.2` (Cordova builder 13)
-- **Production environment deployment**: It is recommended to use `v2.0.0-rc.5` (Cordova builder 12)
-- **Legacy project maintenance**: You can use `v1.0.0-rc.6` (Cordova builder 10)
-
-## Practical Suggestions
-
-1. **Avoid Chinese paths**: Cordovabuilder is sensitive to non-ASCII paths, and it is recommended to use English paths.
-2. **Mount Gradle Cache**: Improve build speed and reduce redundant downloads.
-3. **Using PKCS12 format certificate**: It offers better compatibility and is recommended for signing with `apksigner`.
-4. **Log investigation**: Enable the output of `nohup.log` to facilitate debugging the build process.
-
-## Multi-language support
-
-- **English**: The default language, suitable for international teams
-- **Simplified Chinese**: Localization support for easy reading by Chinese users
 
 ## Documentation and Resources
 
