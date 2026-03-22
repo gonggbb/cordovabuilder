@@ -3,22 +3,22 @@
 layout: home
 
 hero:
-  name: 'cordovabuilder'
-  text: 'Hybrid Development Environment'
+  name: "cordovabuilder"
+  text: "Hybrid Development Environment"
   tagline: Build Cordova apps for different environments using Docker
   image:
     src: /image.png
     alt: cordovabuilder
   actions:
-  - theme: brand
-    text:  What is cordovabuilder?
-    link: /what-is-cordovabuilder
-  - theme: alt
-    text: Quickstart
-    link: /guide/getting-started
-  - theme: alt
-    text: GitHub
-    link: https://github.com/gonggbb/cordovabuilder
+    - theme: brand
+      text: What is cordovabuilder?
+      link: /what-is-cordovabuilder
+    - theme: alt
+      text: Quickstart
+      link: /guide/getting-started
+    - theme: alt
+      text: GitHub
+      link: https://github.com/gonggbb/cordovabuilder
 
 features:
   - title: 🛠️ Cordova 10
@@ -46,5 +46,23 @@ features:
       - Build Tools: ^34.0.0<br>
       - Gradle: 8.7<br>
       - Java: 17.0.10<br>
-      - Node.js: ≥ 16.13 → 20.19.5<br>
+      - Node.js:  20.19.5<br>
+
+  - title: 🔥 Cordova 14
+    details: |
+      Latest release <br>
+      - cordova-android: 14.0.x<br>
+      - Build Tools: ^35.0.0<br>
+      - Gradle: 8.13<br>
+      - Java: 17.0.10<br>
+      - Node.js: 20.19.5<br>
+
+  - title: 🔥 Cordova 15
+    details: |
+      Latest release <br>
+      - cordova-android: 15.0.x<br>
+      - Build Tools: ^36.0.0<br>
+      - Gradle: 8.14.2<br>
+      - Java: 17.0.10<br>
+      - Node.js: 20.19.5<br>
 ---

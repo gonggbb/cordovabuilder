@@ -9,28 +9,21 @@
 > ✅ 提供多语言支持（中文/英文）  
 > ✅ 集成签名、证书管理、Gradle 缓存优化等功能
 
-
-
-##  核心功能
+## 核心功能
 
 | 功能                   | 描述                                                                            |
-| - | - |
+| ---------------------- | ------------------------------------------------------------------------------- |
 | **Docker 化构建环境**  | 使用预配置镜像（如 `gamesg/cordovabuilder:v2.0.0-rc.5`），确保构建环境一致性    |
 | **自动签名与证书管理** | 支持 `apksigner` 和 `jarsigner` 签名方式，兼容旧版与新版标准                    |
 | **多版本兼容**         | 支持 Cordova 10（兼容遗留项目）、Cordova 12（推荐生产）、Cordova 13（最新发布） |
 | **CI/CD 集成**         | 可轻松接入 GitHub Actions、Jenkins 等 CI 工具，实现自动化部署                   |
 | **多语言支持**         | 提供中英双语界面，满足国际化需求                                                |
 
-
-
-
 ## 适用场景
 
 - **新项目开发**：推荐使用 `v3.0.0-rc.2`（Cordovabuilder 13）
 - **生产环境部署**：推荐使用 `v2.0.0-rc.5`（Cordovabuilder 12）
 - **遗留项目维护**：可使用 `v1.0.0-rc.6`（Cordovabuilder 10）
-
-
 
 ## 实践建议
 
@@ -39,14 +32,10 @@
 3. **使用 PKCS12 格式证书**：兼容性更好，推荐使用 `apksigner` 签名。
 4. **日志排查**：启用 `nohup.log` 输出，便于调试构建过程。
 
-
-
 ## 多语言支持
 
 - **English**: 默认语言，适合国际团队
 - **简体中文**: 本地化支持，方便中文用户阅读
-
-
 
 ## 文档与资源
 
@@ -55,8 +44,6 @@
 - [GitHub 镜像](https://github.com/gonggbb/docker-cordovabuilder/pkgs/container/docker-cordovabuilder)
 - [Docker Hub 镜像](https://hub.docker.com/r/gamesg/cordovabuilder)
 
-
-
 ## 目标用户
 
 - 移动应用开发者
@@ -64,20 +51,20 @@
 - CI/CD 构建负责人
 - 企业级混合应用团队
 
-
-
-
-
 ## 附录：版本对比表
 
-<!-- 
+![cordova/version](/cordova/version.png)
+
+<!-- ## 附录：版本对比表 -->
+
+<!--
 | 版本        | Cordova | Java    | Gradle | Node.js | 推荐用途     |
 | -- | - | - |  | - |  |
 | v3.0.0-rc.1 | 13      | 17.0.10 | 8.7    | 20.19.5 | 新项目开发   |
 | v2.0.0-rc.4 | 12      | 11/17   | 7.6    | 18.20.8 | 生产环境     |
 | v1.0.0-rc.5 | 10      | 1.8     | 6.5    | 10.15.3 | 遗留项目维护 | -->
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>版本</th>
@@ -117,14 +104,10 @@
       <td style="color:orange;">⚠️ <strong>遗留项目维护</strong></td>
     </tr>
   </tbody>
-</table>
-
+</table> -->
 
 ## 联系我们
 
 如有问题或建议，请提交 Issue 至 [GitHub 仓库](https://github.com/gonggbb/cordovabuilder/issues) 或联系维护者：[github.com/gonggbb](https://github.com/gonggbb)
 
-
-
 > ✨ **让 Cordova 构建更简单，让开发更高效！**
-
