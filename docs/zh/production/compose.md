@@ -1,4 +1,3 @@
-
 ## 使用 Docker Compose（全平台通用）
 
 创建 `docker-compose.yml` 文件：
@@ -45,4 +44,3 @@ docker-compose down
 ```
 
 <img src="/v12/compose-ok.png" width="100%" />
-
